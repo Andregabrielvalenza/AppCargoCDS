@@ -1,0 +1,693 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import '@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+
+/* Estilos de letras*/
+@font-face{
+    font-family: UbuntuBold;
+    src : url('/assets/font/Ubuntu-Bold.ttf')
+}
+@font-face{
+    font-family: UbuntuLight;
+    src : url('/assets/font/Ubuntu-Light.ttf')
+}
+@font-face{
+    font-family: UbuntuMedium;
+    src : url('/assets/font/Ubuntu-Medium.ttf')
+}
+@font-face{
+    font-family: UbuntuRegular;
+    src : url('/assets/font/Ubuntu-Regular.ttf')
+}
+
+.font-bold{
+    font-family: UbuntuBold !important;
+}
+.font-light{
+    font-family: UbuntuLight !important;
+}
+.font-medium{
+    font-family: UbuntuMedium !important;
+}
+.font-regular{
+    font-family: UbuntuRegular !important;
+}
+
+/* color-size-letra*/
+.color-ff-size-20{
+    color: #fff !important;
+    font-size: 1.25rem !important;
+}
+.color-ff-size-18{
+    color: #fff !important;
+    font-size: 1.125rem !important;
+}
+.color-ff-size-14{
+    color: #fff !important;
+    font-size: 0.875rem !important;
+}
+.color-17-size-13{
+    color: #171717 !important;
+    font-size: 0.8125rem !important;
+}
+.color-17-size-14{
+    color: #171717 !important;
+    font-size: 0.875rem !important;
+}
+.color-17-size-15{
+    color: #171717 !important;
+    font-size: 0.9375rem !important;
+}
+.color-17-size-16{
+    color: #171717 !important;
+    font-size: 1rem !important;
+}
+.color-17-size-20{
+    color: #171717 !important;
+    font-size: 1.25rem !important;
+}
+.color-17-size-22{
+    color: #171717 !important;
+    font-size: 1.375rem !important;
+}
+.color-17-size-24{
+    color: #171717 !important;
+    font-size: 1.5rem !important;
+}
+.color-17-size-18{
+    color: #171717 !important;
+    font-size: 1.125rem !important;
+}
+.color-azul-size-23{
+    color: #004485 !important;
+    font-size: 1.4375rem !important;
+}
+.color-azul-size-13{
+    color: #004485 !important;
+    font-size: 0.8125rem !important;
+}
+.color-azul-size-16{
+    color: #004485 !important;
+    font-size: 1rem !important;
+}
+.color-azul-size-18{
+    color: #004485 !important;
+    font-size: 1.125rem !important;
+}
+.color-47-size-18{
+    color: #47C564 !important;
+    font-size: 1.125rem !important;
+}
+.color-rojo-size-18{
+    color: #FF0000 !important;
+    font-size: 1.125rem !important;
+}
+.span-azul-16{
+    color: #004485 !important;
+    font-size: 1rem !important;
+}
+.color-azul-size-15{
+    color: #004485 !important;
+    font-size: 0.9375rem !important;
+}
+
+/* margin */
+.margin-top-8{
+    margin-top: 0.5rem !important;
+}
+.margin-bottom-cero{
+    margin-bottom: 0px !important;
+}
+.margin-top-cero{
+    margin-top: 0px !important;
+}
+.margin-top-26{
+ margin-top: 1.625rem !important;
+}
+.margin-top-45{
+    margin-top: 2.8125rem !important;
+}
+.margin-top-35{
+    margin-top: 2.1875rem !important;
+}
+.margin-bottom-22{
+    margin-bottom: 1.375rem !important;
+}
+.margin-top-10{
+    margin-top: 0.625rem !important;
+}
+.margin-top-14{
+    margin-top: 0.875rem !important;
+}
+.margin-top-18{
+    margin-top: 1.125rem !important;
+}
+.margin-right-15{
+    margin-right: 0.9375rem !important;
+}
+.margin-top-23{
+    margin-top: 1.4375rem !important;
+}
+.margin-top-25{
+    margin-top: 1.5625rem !important;
+}
+.margin-right-8{
+    margin-right: 0.5rem !important;
+}
+.margin-cero{
+    margin: 0px !important;
+}
+.margin-bottom-6{
+    margin-bottom: 0.40625rem !important;
+}
+.margin-bottom-14{
+    margin-bottom: 0.875rem !important;
+}
+.margin-right-30{
+    margin-right: 1.5rem !important;
+}
+.margin-left-6{
+    margin-left: 0.375rem  !important;
+}
+.margin-right-20{
+    margin-right: 1.25rem !important;
+}
+.margin-top-6{
+    margin-top: 0.375rem !important;
+}
+
+body{
+    --ion-background-color:#F6F6F6 !important;
+    background-color:#F6F6F6 !important;
+}
+app-root{
+    --ion-background-color:#F6F6F6 !important;
+    background-color:#F6F6F6 !important;
+}
+ion-content::part(background) {
+    background: #F6F6F6 !important;
+}
+.div-conten-general-padding-left-right{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.div-conten-padding-top-general{
+    padding-top: 2rem;
+}
+.div-conten-padding-bottom{
+    padding-bottom: 2rem;
+}
+.div-conten-padding-bottom-list{
+    padding-bottom: 11rem;
+}
+.btn-amarrillo-general{
+    --background: #FFBE00;
+    --background-activated: #FFBE00;
+    --color: #004485;
+    --color-activated: #004485;
+    --border-radius: 0px;
+    font-size: 1rem;
+    font-family: UbuntuMedium;
+    height: 3.75rem;
+}
+.div-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 3.75rem;
+    background-color: #F6F6F6;
+    z-index: 1;
+}
+.imtem-header-general{
+    --inner-padding-start: 0px;
+    --inner-padding-end: 0px;
+    --padding-start: 0rem;
+    --padding-end: 0rem;
+    --padding-top: 0rem;
+    --padding-bottom: 0rem;
+    --background: transparent;
+    margin-bottom: 0.6875rem;
+    align-items: flex-start;
+
+    ion-label{
+        padding-left: 0.5rem;
+        margin: 0px;
+        h1{
+            border-bottom: 4px solid #FFBE00;
+            width: fit-content;
+            padding-bottom: 5px;
+        }
+    }
+    .btn-header-general{
+        --background: transparent;
+        --background-activated: transparent;
+        --color: #000000;
+        --color-activated: #000000;
+        margin: 0px;
+        --padding-start: 0px;
+        --padding-end: 0px;
+        --padding-top: 0px;
+        --padding-bottom: 0px;
+    }
+}
+.div-clanco-form{
+    background-color: #fff;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.item-heigt-textarea{
+    height: 6.25rem !important;
+}
+.item-form-general{
+    width: 100%;
+    --inner-padding-start: 0px;
+    --inner-padding-end: 0px;
+    --padding-start: 0.875rem;
+    --padding-end: 0.875rem;
+    --padding-top: 0rem;
+    --padding-bottom: 0rem;
+    --border-color: #8D8D8D;
+    --border-style: solid;
+    --border-width: 0.75px;
+    --background: transparent;
+    height: 3.375rem;
+    position: relative;
+    ion-select{
+        width: 100% !important;
+        font-size: 0.9375rem;
+        font-family: UbuntuRegular;
+        .select-wrapper{
+            width: 100%;
+        }
+    }
+    ion-select::part(placeholder),
+    ion-select::part(text) {
+        color: #171717;
+    }
+    ion-select::part(placeholder){
+        opacity: 1;
+    }
+    ion-select::part(icon){
+        display: none;
+    }
+    .icon-select{
+        position: absolute;
+        right: 0rem;
+        top: 1rem;
+        font-size: 1.25rem;
+        color: #000000;
+    }
+    ion-input, ion-textarea{
+        --background: transparent;
+        --color: #171717;
+        font-size: 0.9375rem;
+        --placeholder-color: #171717;
+        --placeholder-font-style: UbuntuRegular; 
+        --placeholder-opacity: 1;
+        width: 100%;
+    }
+    .input-opacidad-placeholder{
+        --placeholder-color: #979797 !important;
+    }
+    .input-marign-left-right{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .btn-peso-kg{
+        --background: transparent;
+        --background-activated: transparent;
+        --color: #979797;
+        --color-activated: #171717;
+        --color-focused: #171717;
+        --color-hover: #171717;
+        font-size: 0.9375rem;
+        font-family: UbuntuRegular;
+    }
+}
+.item-form-general::part(native){
+    height: 100%;
+}
+.btn-transparen-qr{
+    --background: transparent;
+    --background-activated: transparent;
+    width: auto;
+    margin: 0px;
+}
+.col-padding-left-right-form{
+    padding-left: 0.1875rem;
+    padding-right: 0.1875rem;
+}
+.btn-agregar-doc{
+    --background: transparent;
+    --background-activated: transparent;
+    --color: #171717;
+    --color-activated: #171717; 
+    font-family: UbuntuRegular;
+    font-size: 0.9375rem;
+    margin: 0px;
+    ion-img{
+        margin-right: 0.375rem;
+        width: 1.25rem;
+    }
+}
+.btn-widht-completo{
+    width: 100%;
+}
+.btn-margin-top{
+    margin-top: 6rem !important;
+}
+ion-ripple-effect{
+    width: 100%;
+}
+
+.div-flex-radios{
+    display: flex;
+    align-items: center;
+    .item-radios{
+        --inner-padding-start: 0px;
+        --inner-padding-end: 0px;
+        --padding-start: 0rem;
+        --padding-end: 0rem;
+        --padding-top: 0rem;
+        --background: transparent;
+        --background-activated: transparent;
+        ion-radio{
+            margin-right: 0.375rem;
+        }
+        ion-radio::part(container) {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            border: 1px solid #8D8D8D;
+        }
+    }
+}
+.texto-padding-8-header{
+    padding-left: 0.5rem;
+}
+
+.div-padding-top-home{
+    padding-top: 2.5rem;
+    padding-bottom: 5.625rem;
+}
+ion-progress-bar{
+    --background: #DADADA;
+    --progress-background: #004485;
+    height: 0.5rem;
+}
+.h3-flex-center-azul{
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #FFBE00;
+    width: fit-content;
+    padding-bottom: 5px;
+    ion-img{
+        width: 1.25rem;
+        margin-right: 0.5rem;
+    }
+}
+.card-list-proceso{
+    margin: 0;
+    width: 100%;
+    box-shadow: none;
+    border-bottom: 1px solid #DADADA;
+    border-radius: 0px;
+    background-color: transparent;
+    padding-top: 1.375rem;
+    padding-bottom: 1.375rem;
+    .item-center-flx{
+        align-items: flex-start;
+        ion-icon{
+            color: #004485;
+            margin-right: 1rem;
+            font-size: 1.75rem;
+        }
+        .img-icon-caja-left{
+            width: 1.75rem;
+            margin-right: 1rem;
+        }
+    }
+    ion-item{
+        --inner-padding-start: 0px;
+        --inner-padding-end: 0px;
+        --padding-start: 0rem;
+        --padding-end: 0rem;
+        --padding-top: 0rem;
+        --padding-bottom: 0rem;
+        --border-radius: 0px;
+        --background: transparent;
+        ion-label{
+        white-space: break-spaces !important;
+        color: #171717 !important;
+        }
+        .btn-trivapsor{
+        --background: transparent;
+        --background-activated: transparent;
+        width: 2.8125rem;
+        height: 2.8125rem;
+        --border-radius: 6px;
+        }
+    }
+}
+.color-azul-span{
+    color: #004485 !important;
+}
+.texto-padding-24-header{
+    padding-left: 1.5rem;
+}
+.btn-footer-completo{
+    --background: #FFBE00;
+    --background-activated: #FFBE00;
+    --color: #004485;
+    --color-activated: #004485;
+    --border-radius: 0px;
+    font-size: 1rem;
+    font-family: UbuntuMedium;
+    height: 3.75rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0px;
+}
+.modal-transparente{
+    --background: #0000009c;
+    ion-content.conten-modal::part(background) {
+        background: transparent !important;
+    }
+    ion-content{
+        --background: transparent;
+        --padding-start: 0px;
+        --padding-end: 0px;
+        .div-modal{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            .card-modal-centro{
+                padding-top: 3.75rem;
+                padding-left: 1.875rem;
+                padding-right: 1.875rem;
+                padding-bottom: 3.75rem;
+                background-color: #fff;
+                border-radius: 0px;
+                border: 1px solid #707070;
+                width: 100%;
+                position: relative;
+                .btn-close-modal{
+                    --background: transparent;
+                    --background-activated: transparent;
+                    --color: #171717;
+                    --color-activated: #171717;
+                    position: absolute;
+                    top: 0.5rem;
+                    right: 1.875rem;
+                    font-size: 1.25rem;
+                }
+                .item-form-general-modal{
+                    width: 100%;
+                    --inner-padding-start: 0px;
+                    --inner-padding-end: 0px;
+                    --padding-start: 0.875rem;
+                    --padding-end: 0.875rem;
+                    --padding-top: 0rem;
+                    --padding-bottom: 0rem;
+                    --border-color: #8D8D8D;
+                    --border-style: solid;
+                    --border-width: 0.75px;
+                    --background: transparent;
+                    height: 3.375rem;
+                    position: relative;
+                    ion-select{
+                        width: 100% !important;
+                        font-size: 0.9375rem;
+                        font-family: UbuntuRegular;
+                        .select-wrapper{
+                            width: 100%;
+                        }
+                    }
+                    ion-select::part(placeholder),
+                    ion-select::part(text) {
+                        color: #171717;
+                    }
+                    ion-select::part(placeholder){
+                        opacity: 1;
+                    }
+                    ion-select::part(icon){
+                        display: none;
+                    }
+                    .icon-select{
+                        position: absolute;
+                        right: 0rem;
+                        top: 1rem;
+                        font-size: 1.25rem;
+                        color: #000000;
+                    }
+                    ion-input, ion-textarea{
+                        --background: transparent;
+                        --color: #171717;
+                        font-size: 0.9375rem;
+                        --placeholder-color: #171717;
+                        --placeholder-font-style: UbuntuRegular; 
+                        --placeholder-opacity: 1;
+                        width: 100%;
+                    }
+                    .input-opacidad-placeholder{
+                        --placeholder-color: #979797 !important;
+                    }
+                    .input-marign-left-right{
+                        margin-left: 0.5rem;
+                        margin-right: 0.5rem;
+                    }
+                    .btn-peso-kg{
+                        --background: transparent;
+                        --background-activated: transparent;
+                        --color: #979797;
+                        --color-activated: #171717;
+                        --color-focused: #171717;
+                        --color-hover: #171717;
+                        font-size: 0.9375rem;
+                        font-family: UbuntuRegular;
+                    }
+                }
+                .item-form-general-modal::part(native){
+                    height: 100%;
+                }
+                .btn-moda-centrar{
+                    width: 60%;
+                    margin-left: 20%;
+                    margin-top: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+.div-header-guias{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .btn-circle-header-blanco{
+        --background: #FFFFFF;
+        --background-activated: #FFFFFF;
+        --color: #004485;
+        margin: 0px;
+        --border-radius: 50%;
+        --box-shadow: 0px 3px 6px #00000029;
+        width: 35px;
+        height: 35px;
+    }
+}
+.acordion-guia{
+    border-bottom: 1px solid #DADADA;
+    .item-acordeon{
+        --background: transparent;
+        --background-activated: transparent; 
+        ion-icon{
+            color: #2C3E50 !important;
+            font-size: 1.25rem;
+        }
+    }
+    .item-acordeon::part(native){
+        padding-left: 0px;
+    }
+    .item-azul-guia{
+        --background: #004485 !important;
+        --background-activated: #004485 !important; 
+        ion-icon{
+            color: #fff !important;
+            font-size: 1.25rem;
+        }
+    }
+    .item-azul-guia::part(native){
+        padding-left: 0.875rem !important;
+    }
+    .div-conten-padding-left-right{
+        padding-left: 0.875rem !important;
+        padding-right: 0.875rem !important;
+    }
+}
+.div-popover{
+    background: #FFBE00;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    width: 95%;
+    position: absolute;
+    right: 0;
+    bottom: -4rem;
+    z-index: 99999;
+    .item-popover{
+        --background: transparent;
+        --padding-top: 0.75rem;
+        --padding-bottom: 0.75rem;
+        border-bottom: 1px solid #004485;
+        ion-img{
+            width: 1.5rem;
+        }
+        ion-icon{
+            font-size: 1.5rem;
+            color: #004485;
+        }
+    }
+    .item-border-bottom-cero{
+        border-bottom: 0px !important;
+    }
+    .item-popover::part(native){
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

@@ -1,0 +1,292 @@
+<ion-content>
+  <div class="div-header div-conten-general-padding-left-right div-conten-padding-top-general">
+    <ion-item lines="none" class="imtem-header-general">
+      <ion-button mode="ios" class="btn-header-general" href="/home"><ion-img src="assets/img/icon-left-header.svg"></ion-img></ion-button>
+      <ion-label class="color-17-size-24 font-bold">
+        <h1>Registro de paquete</h1>
+      </ion-label>
+    </ion-item>
+    <p class="color-17-size-18 font-regular margin-cero">Ingrse los datos de los paquetes</p>
+  </div>
+  <div class="div-conten-general-padding-left-right div-clanco-form margin-bottom-14">
+    <ion-grid class="ion-no-padding">
+      <ion-row class="ion-align-items-center margin-bottom-6">
+        <ion-col size="10" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-select placeholder="Tipo" mode="ios">
+              <ion-select-option value="apple">Apple</ion-select-option>
+              <ion-select-option value="banana">Banana</ion-select-option>
+              <ion-select-option value="orange">Orange</ion-select-option>
+            </ion-select>
+            <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+          </ion-item>
+        </ion-col>
+        <ion-col size="2" class="ion-text-center col-padding-left-right-form">
+          <ion-button mode="ios" class="btn-transparen-qr ion-no-padding" (click)="setOpen(true)"><ion-img src="assets/img/qr.svg"></ion-img></ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="margin-bottom-6">
+        <ion-col size="4" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-input placeholder="Serie" type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="8" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-input placeholder="N° de documento" type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row class="margin-bottom-6">
+        <ion-col size="6" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-button mode="ios" class="btn-peso-kg ion-no-padding margin-cero">Peso</ion-button> 
+            <ion-input value="0" type="number" class="ion-text-center input-marign-left-right"></ion-input>
+            <ion-button mode="ios" class="btn-peso-kg ion-no-padding margin-cero">Kg</ion-button>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-button mode="ios" class="btn-peso-kg ion-no-padding margin-cero" (click)="decrement()"><ion-icon name="remove"></ion-icon></ion-button> 
+            <ion-input type="number" class="ion-text-center input-marign-left-right input-opacidad-placeholder" placeholder="cant" value="{{count }}"></ion-input>
+            <ion-button mode="ios" class="btn-peso-kg ion-no-padding margin-cero" (click)="increment()"><ion-icon name="add"></ion-icon></ion-button>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row class="margin-bottom-6">
+        <ion-col size="12" class="col-padding-left-right-form">
+          <div class="div-flex-radios">
+            <p class="margin-bottom-cero margin-top-cero color-17-size-15 font-regular margin-right-15">Pesado por:</p>
+            <ion-item lines="none" class="item-radios margin-right-30">
+              <ion-radio mode="md"></ion-radio>
+              <ion-label class="color-17-size-15 font-regular">cliente</ion-label>
+            </ion-item>
+            <ion-item lines="none" class="item-radios">
+              <ion-radio mode="md"></ion-radio>
+              <ion-label class="color-17-size-15 font-regular">Chofer</ion-label>
+            </ion-item>                        
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="margin-bottom-6">
+        <ion-col size="12" class="col-padding-left-right-form">
+          <h6 class="margin-top-cero margin-bottom-6 color-17-size-15 font-medium">Datos del destinatario</h6>
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-input placeholder="Nombre en guia (consignado)" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row class="margin-bottom-6">
+        <ion-col size="4" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-select placeholder="Tipo" mode="ios">
+              <ion-select-option value="apple">Apple</ion-select-option>
+              <ion-select-option value="banana">Banana</ion-select-option>
+              <ion-select-option value="orange">Orange</ion-select-option>
+            </ion-select>
+            <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+          </ion-item>
+        </ion-col>
+        <ion-col size="8" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-input placeholder="N° de documento" type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="div-conten-general-padding-left-right div-clanco-form margin-bottom-14">
+    <ion-grid class="ion-no-padding">
+      <ion-row class="ion-align-items-center margin-bottom-6">
+        <ion-col size="10" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-select placeholder="Tipo" mode="ios">
+              <ion-select-option value="apple">Apple</ion-select-option>
+              <ion-select-option value="banana">Banana</ion-select-option>
+              <ion-select-option value="orange">Orange</ion-select-option>
+            </ion-select>
+            <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+          </ion-item>
+        </ion-col>
+        <ion-col size="2" class="ion-text-center col-padding-left-right-form">
+          <ion-button mode="ios" class="btn-transparen-qr ion-no-padding"><ion-img src="assets/img/qr.svg"></ion-img></ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="margin-bottom-6">
+        <ion-col size="4" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-input placeholder="Serie" type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="8" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-input placeholder="N° de documento" type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row class="margin-bottom-6">
+        <ion-col size="6" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-button mode="ios" class="btn-peso-kg ion-no-padding margin-cero">Peso</ion-button> 
+            <ion-input value="0" type="number" class="ion-text-center input-marign-left-right"></ion-input>
+            <ion-button mode="ios" class="btn-peso-kg ion-no-padding margin-cero">Kg</ion-button>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-button mode="ios" class="btn-peso-kg ion-no-padding margin-cero" (click)="decrement()"><ion-icon name="remove"></ion-icon></ion-button> 
+            <ion-input type="number" class="ion-text-center input-marign-left-right input-opacidad-placeholder" placeholder="cant" value="{{count }}"></ion-input>
+            <ion-button mode="ios" class="btn-peso-kg ion-no-padding margin-cero" (click)="increment()"><ion-icon name="add"></ion-icon></ion-button>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row class="margin-bottom-6">
+        <ion-col size="12" class="col-padding-left-right-form">
+          <div class="div-flex-radios">
+            <p class="margin-bottom-cero margin-top-cero font-regular margin-right-15 color-17-size-15">Pesado por:</p>
+            <ion-item lines="none" class="item-radios margin-right-30">
+              <ion-radio mode="md"></ion-radio>
+              <ion-label class="color-17-size-15 font-regular">cliente</ion-label>
+            </ion-item>
+            <ion-item lines="none" class="item-radios">
+              <ion-radio mode="md"></ion-radio>
+              <ion-label class="color-17-size-15 font-regular">Chofer</ion-label>
+            </ion-item>                        
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="margin-bottom-6">
+        <ion-col size="12" class="col-padding-left-right-form">
+          <h6 class="margin-top-cero margin-bottom-6 color-17-size-15 font-medium">Datos del destinatario</h6>
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-input placeholder="Nombre en guia (consignado)" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row class="margin-bottom-6">
+        <ion-col size="4" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-select placeholder="Tipo" mode="ios">
+              <ion-select-option value="apple">Apple</ion-select-option>
+              <ion-select-option value="banana">Banana</ion-select-option>
+              <ion-select-option value="orange">Orange</ion-select-option>
+            </ion-select>
+            <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+          </ion-item>
+        </ion-col>
+        <ion-col size="8" class="col-padding-left-right-form">
+          <ion-item lines="none" mode="ios" class="item-form-general">
+            <ion-input placeholder="N° de documento" type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="div-conten-general-padding-left-right div-conten-padding-bottom">
+    <ion-button mode="ios" class="btn-agregar-doc ion-no-padding">
+      <ion-img src="assets/img/icon-add-circle.svg"></ion-img>
+      Agregar documento
+    </ion-button>
+    <ion-button mode="ios" class="btn-amarrillo-general margin-cero btn-widht-completo btn-margin-top" href="/documentos-cargados">
+      <ion-img src="assets/img/icon-cargar-paquetes.svg" class="margin-right-8"></ion-img> Cargar documentos
+    </ion-button>
+  </div>
+
+
+  <ion-modal [isOpen]="isModalOpen" class="modal-transparente">
+    <ng-template>
+      <ion-content class="ion-padding conten-modal">
+        <div class="modal-padding-left-right div-modal">
+          <ion-card class="ion-no-margin card-modal-centro">
+            <ion-button mode="ios" class="btn-close-modal ion-no-padding" (click)="setOpen(false)"><ion-icon name="close"></ion-icon></ion-button>
+            <h1 class="ion-text-center color-17-size-24 font-bold">Registro de documento</h1>
+            <p class="ion-text-center font-regular color-17-size-16">Por favor revisa los datos del documento escaneado</p>
+            <ion-grid class="ion-no-padding margin-top-26">
+              <ion-row class="margin-bottom-6">
+                <ion-col size="12" class="col-padding-left-right-form">
+                  <ion-item lines="none" mode="ios" class="item-form-general">
+                    <ion-select placeholder="Factura" mode="ios">
+                      <ion-select-option value="apple">Apple</ion-select-option>
+                      <ion-select-option value="banana">Banana</ion-select-option>
+                      <ion-select-option value="orange">Orange</ion-select-option>
+                    </ion-select>
+                    <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row class="margin-bottom-6">
+                <ion-col size="4" class="col-padding-left-right-form">
+                  <ion-item lines="none" mode="ios" class="item-form-general">
+                    <ion-input placeholder="Serie" type="number"></ion-input>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="8" class="col-padding-left-right-form">
+                  <ion-item lines="none" mode="ios" class="item-form-general">
+                    <ion-input placeholder="N° de documento" type="number"></ion-input>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row class="margin-bottom-6">
+                <ion-col size="6" class="col-padding-left-right-form">
+                  <ion-item lines="none" mode="ios" class="item-form-general">
+                    <ion-button mode="ios" class="btn-peso-kg ion-no-padding margin-cero">Peso</ion-button> 
+                    <ion-input value="0" type="number" class="ion-text-center input-marign-left-right"></ion-input>
+                    <ion-button mode="ios" class="btn-peso-kg ion-no-padding margin-cero">Kg</ion-button>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="6" class="col-padding-left-right-form">
+                  <ion-item lines="none" mode="ios" class="item-form-general">
+                    <ion-button mode="ios" class="btn-peso-kg ion-no-padding margin-cero" (click)="decrement()"><ion-icon name="remove"></ion-icon></ion-button> 
+                    <ion-input type="number" class="ion-text-center input-marign-left-right input-opacidad-placeholder" placeholder="cant" value="{{count }}"></ion-input>
+                    <ion-button mode="ios" class="btn-peso-kg ion-no-padding margin-cero" (click)="increment()"><ion-icon name="add"></ion-icon></ion-button>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row class="margin-bottom-6">
+                <ion-col size="12" class="col-padding-left-right-form">
+                  <ion-item lines="none" mode="ios" class="item-form-general item-heigt-textarea">
+                    <ion-textarea placeholder="Comentario"></ion-textarea>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row class="margin-bottom-6">
+                <ion-col size="12" class="col-padding-left-right-form">
+                  <h6 class="margin-top-cero margin-bottom-6 color-17-size-15 font-medium">Datos del destinatario</h6>
+                  <ion-item lines="none" mode="ios" class="item-form-general">
+                    <ion-select placeholder="Destino" mode="ios">
+                      <ion-select-option value="apple">Apple</ion-select-option>
+                      <ion-select-option value="banana">Banana</ion-select-option>
+                      <ion-select-option value="orange">Orange</ion-select-option>
+                    </ion-select>
+                    <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row class="margin-bottom-6">
+                <ion-col size="4" class="col-padding-left-right-form">
+                  <ion-item lines="none" mode="ios" class="item-form-general">
+                    <ion-select placeholder="Tipo" mode="ios">
+                      <ion-select-option value="apple">Apple</ion-select-option>
+                      <ion-select-option value="banana">Banana</ion-select-option>
+                      <ion-select-option value="orange">Orange</ion-select-option>
+                    </ion-select>
+                    <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="8" class="col-padding-left-right-form">
+                  <ion-item lines="none" mode="ios" class="item-form-general">
+                    <ion-input placeholder="N° de documento" type="number"></ion-input>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <ion-button mode="ios" class="btn-amarrillo-general btn-moda-centrar"  href="/lista-gui-emision">
+               Confirmar
+            </ion-button>
+          </ion-card>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+  
+</ion-content>

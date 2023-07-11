@@ -1,0 +1,270 @@
+<ion-content>
+  <div class="div-header div-conten-general-padding-left-right div-conten-padding-top-general div-conten-padding-bottom-list">
+    <ion-item lines="none" class="imtem-header-general">
+      <ion-button mode="ios" class="btn-header-general" href="/home"><ion-img src="assets/img/icon-left-header.svg"></ion-img></ion-button>
+      <ion-label class="color-17-size-24 font-bold">
+        <h1>Paquetes a carga</h1>
+      </ion-label>
+    </ion-item>
+    <h6 class="margin-cero font-bold color-17-size-18 texto-padding-24-header">Alicorp</h6>
+    <p class="margin-cero font-regular color-17-size-18 texto-padding-24-header">Hora de inicio: 08:30</p>
+    <ion-grid class="ion-no-padding margin-top-45">
+      <ion-row>
+        <ion-col size="12" class="ion-no-padding">
+          <ion-card mode="ios" class="card-list-proceso card-relative-lista">
+            <ion-item lines="none" mode="ios" class="item-center-flx">
+              <ion-img src="assets/img/icon-caja-azul.svg" class="img-icon-caja-left"></ion-img>
+              <ion-label class="margin-bottom-cero margin-top-cero">
+                <h1 class="margin-top-cero margin-bottom-cero color-17-size-18 font-bold"><u>00012- 1231241</u> <span class="span-azul-16 font-regular margin-left-6">Destino</span></h1>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">Juan Jose Gonzales Henriquez</p>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">(12) Paq. en guia (12) paq. cargados</p>
+              </ion-label>
+              <div>
+                <ion-button mode="ios" class="btn-trivapsor ion-no-padding margin-cero" id="popover-button">
+                  <ion-img src="assets/img/icon-edit.svg"></ion-img>
+                </ion-button>
+              </div>
+            </ion-item>
+          </ion-card>
+          <div class="div-popover">
+            <ion-item class="item-popover" [button]="true" [detail]="false" lines="none" href="/edit-paquete">
+              <ion-img src="assets/img/icon-caja-azul.svg"></ion-img>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar paquete
+              </ion-label>
+            </ion-item>
+            <ion-item class="item-popover item-border-bottom-cero" [button]="true" [detail]="false" lines="none" href="/cargar-documento">
+              <ion-icon name="list"></ion-icon>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar guia de remisión
+              </ion-label>
+            </ion-item>
+          </div>
+        </ion-col>
+        <ion-col size="12" class="ion-no-padding">
+          <ion-card mode="ios" class="card-list-proceso card-relative-lista">
+            <ion-item lines="none" mode="ios" class="item-center-flx">
+              <ion-img src="assets/img/icon-caja-azul.svg" class="img-icon-caja-left"></ion-img>
+              <ion-label class="margin-bottom-cero margin-top-cero">
+                <h1 class="margin-top-cero margin-bottom-cero color-17-size-18 font-bold"><u>00012- 1231241</u> <span class="span-azul-16 font-regular margin-left-6">Destino</span></h1>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">Juan Jose Gonzales Henriquez</p>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">(12) Paq. en guia (12) paq. cargados</p>
+              </ion-label>
+              <div>
+                <ion-button mode="ios" class="btn-trivapsor ion-no-padding margin-cero" id="popover-button">
+                  <ion-img src="assets/img/icon-edit.svg"></ion-img>
+                </ion-button>
+              </div>
+            </ion-item>
+          </ion-card>
+          <div class="div-popover" style="display: none;">
+            <ion-item class="item-popover" [button]="true" [detail]="false" lines="none">
+              <ion-img src="assets/img/icon-caja-azul.svg"></ion-img>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar paquete
+              </ion-label>
+            </ion-item>
+            <ion-item class="item-popover item-border-bottom-cero" [button]="true" [detail]="false" lines="none">
+              <ion-icon name="list"></ion-icon>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar guia de remisión
+              </ion-label>
+            </ion-item>
+          </div>
+        </ion-col>
+        <ion-col size="12" class="ion-no-padding">
+          <ion-card mode="ios" class="card-list-proceso card-relative-lista">
+            <ion-item lines="none" mode="ios" class="item-center-flx">
+              <ion-img src="assets/img/icon-caja-azul.svg" class="img-icon-caja-left"></ion-img>
+              <ion-label class="margin-bottom-cero margin-top-cero">
+                <h1 class="margin-top-cero margin-bottom-cero color-17-size-18 font-bold"><u>00012- 1231241</u> <span class="span-azul-16 font-regular margin-left-6">Destino</span></h1>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">Juan Jose Gonzales Henriquez</p>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">(12) Paq. en guia (12) paq. cargados</p>
+              </ion-label>
+              <div>
+                <ion-button mode="ios" class="btn-trivapsor ion-no-padding margin-cero" id="popover-button">
+                  <ion-img src="assets/img/icon-edit.svg"></ion-img>
+                </ion-button>
+              </div>
+            </ion-item>
+          </ion-card>
+          <div class="div-popover" style="display: none;">
+            <ion-item class="item-popover" [button]="true" [detail]="false" lines="none">
+              <ion-img src="assets/img/icon-caja-azul.svg"></ion-img>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar paquete
+              </ion-label>
+            </ion-item>
+            <ion-item class="item-popover item-border-bottom-cero" [button]="true" [detail]="false" lines="none">
+              <ion-icon name="list"></ion-icon>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar guia de remisión
+              </ion-label>
+            </ion-item>
+          </div>
+        </ion-col>
+        <ion-col size="12" class="ion-no-padding">
+          <ion-card mode="ios" class="card-list-proceso card-relative-lista">
+            <ion-item lines="none" mode="ios" class="item-center-flx">
+              <ion-img src="assets/img/icon-caja-azul.svg" class="img-icon-caja-left"></ion-img>
+              <ion-label class="margin-bottom-cero margin-top-cero">
+                <h1 class="margin-top-cero margin-bottom-cero color-17-size-18 font-bold"><u>00012- 1231241</u> <span class="span-azul-16 font-regular margin-left-6">Destino</span></h1>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">Juan Jose Gonzales Henriquez</p>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">(12) Paq. en guia (12) paq. cargados</p>
+              </ion-label>
+              <div>
+                <ion-button mode="ios" class="btn-trivapsor ion-no-padding margin-cero" id="popover-button">
+                  <ion-img src="assets/img/icon-edit.svg"></ion-img>
+                </ion-button>
+              </div>
+            </ion-item>
+          </ion-card>
+          <div class="div-popover" style="display: none;">
+            <ion-item class="item-popover" [button]="true" [detail]="false" lines="none">
+              <ion-img src="assets/img/icon-caja-azul.svg"></ion-img>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar paquete
+              </ion-label>
+            </ion-item>
+            <ion-item class="item-popover item-border-bottom-cero" [button]="true" [detail]="false" lines="none">
+              <ion-icon name="list"></ion-icon>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar guia de remisión
+              </ion-label>
+            </ion-item>
+          </div>
+        </ion-col>
+        <ion-col size="12" class="ion-no-padding">
+          <ion-card mode="ios" class="card-list-proceso card-relative-lista">
+            <ion-item lines="none" mode="ios" class="item-center-flx">
+              <ion-img src="assets/img/icon-caja-azul.svg" class="img-icon-caja-left"></ion-img>
+              <ion-label class="margin-bottom-cero margin-top-cero">
+                <h1 class="margin-top-cero margin-bottom-cero color-17-size-18 font-bold"><u>00012- 1231241</u> <span class="span-azul-16 font-regular margin-left-6">Destino</span></h1>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">Juan Jose Gonzales Henriquez</p>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">(12) Paq. en guia (12) paq. cargados</p>
+              </ion-label>
+              <div>
+                <ion-button mode="ios" class="btn-trivapsor ion-no-padding margin-cero" id="popover-button">
+                  <ion-img src="assets/img/icon-edit.svg"></ion-img>
+                </ion-button>
+              </div>
+            </ion-item>
+          </ion-card>
+          <div class="div-popover" style="display: none;">
+            <ion-item class="item-popover" [button]="true" [detail]="false" lines="none">
+              <ion-img src="assets/img/icon-caja-azul.svg"></ion-img>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar paquete
+              </ion-label>
+            </ion-item>
+            <ion-item class="item-popover item-border-bottom-cero" [button]="true" [detail]="false" lines="none">
+              <ion-icon name="list"></ion-icon>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar guia de remisión
+              </ion-label>
+            </ion-item>
+          </div>
+        </ion-col>
+        <ion-col size="12" class="ion-no-padding">
+          <ion-card mode="ios" class="card-list-proceso card-relative-lista">
+            <ion-item lines="none" mode="ios" class="item-center-flx">
+              <ion-img src="assets/img/icon-caja-azul.svg" class="img-icon-caja-left"></ion-img>
+              <ion-label class="margin-bottom-cero margin-top-cero">
+                <h1 class="margin-top-cero margin-bottom-cero color-17-size-18 font-bold"><u>00012- 1231241</u> <span class="span-azul-16 font-regular margin-left-6">Destino</span></h1>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">Juan Jose Gonzales Henriquez</p>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">(12) Paq. en guia (12) paq. cargados</p>
+              </ion-label>
+              <div>
+                <ion-button mode="ios" class="btn-trivapsor ion-no-padding margin-cero" id="popover-button">
+                  <ion-img src="assets/img/icon-edit.svg"></ion-img>
+                </ion-button>
+              </div>
+            </ion-item>
+          </ion-card>
+          <div class="div-popover" style="display: none;">
+            <ion-item class="item-popover" [button]="true" [detail]="false" lines="none">
+              <ion-img src="assets/img/icon-caja-azul.svg"></ion-img>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar paquete
+              </ion-label>
+            </ion-item>
+            <ion-item class="item-popover item-border-bottom-cero" [button]="true" [detail]="false" lines="none">
+              <ion-icon name="list"></ion-icon>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar guia de remisión
+              </ion-label>
+            </ion-item>
+          </div>
+        </ion-col>
+        <ion-col size="12" class="ion-no-padding">
+          <ion-card mode="ios" class="card-list-proceso card-relative-lista">
+            <ion-item lines="none" mode="ios" class="item-center-flx">
+              <ion-img src="assets/img/icon-caja-azul.svg" class="img-icon-caja-left"></ion-img>
+              <ion-label class="margin-bottom-cero margin-top-cero">
+                <h1 class="margin-top-cero margin-bottom-cero color-17-size-18 font-bold"><u>00012- 1231241</u> <span class="span-azul-16 font-regular margin-left-6">Destino</span></h1>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">Juan Jose Gonzales Henriquez</p>
+                <p class="margin-bottom-cero color-17-size-16 font-regular margin-top-8">(12) Paq. en guia (12) paq. cargados</p>
+              </ion-label>
+              <div>
+                <ion-button mode="ios" class="btn-trivapsor ion-no-padding margin-cero" id="popover-button">
+                  <ion-img src="assets/img/icon-edit.svg"></ion-img>
+                </ion-button>
+              </div>
+            </ion-item>
+          </ion-card>
+          <div class="div-popover" style="display: none;">
+            <ion-item class="item-popover" [button]="true" [detail]="false" lines="none">
+              <ion-img src="assets/img/icon-caja-azul.svg"></ion-img>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar paquete
+              </ion-label>
+            </ion-item>
+            <ion-item class="item-popover item-border-bottom-cero" [button]="true" [detail]="false" lines="none">
+              <ion-icon name="list"></ion-icon>
+              <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+                Editar guia de remisión
+              </ion-label>
+            </ion-item>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="div-footer-recojos">
+    <div class="div-item-dos-footer">
+      <ion-button mode="ios" class="btn-amarrillo-general margin-cero btn-widht-completo btn-border-right-footer"  href="/cargar-paquete">
+        <ion-img src="assets/img/icon-cargar-paquetes.svg" class="margin-right-8"></ion-img> Cargar paquetes
+      </ion-button>
+      <ion-button mode="ios" class="btn-amarrillo-general margin-cero btn-widht-completo" href="/cargar-documento">
+        <ion-img src="assets/img/icon-qr.svg" class="margin-right-8"></ion-img> Documentos
+      </ion-button>
+    </div>
+    <ion-button mode="ios" class="btn-amarrillo-general btn-widht-completo margin-cero btn-azul-footer" (click)="setOpen(true)">Finalizar recojo</ion-button>
+  </div>
+
+
+  <ion-modal [isOpen]="isModalOpen" class="modal-transparente">
+    <ng-template>
+      <ion-content class="ion-padding conten-modal">
+        <div class="modal-padding-left-right div-modal">
+          <ion-card class="ion-no-margin card-modal-centro">
+            <ion-button mode="ios" class="btn-close-modal ion-no-padding" (click)="setOpen(false)"><ion-icon name="close"></ion-icon></ion-button>
+            <h1 class="ion-text-center color-17-size-24 font-bold">Confirmar</h1>
+            <p class="ion-text-center font-regular color-17-size-16">Por favor revisa los datos del paquete escaneado</p>
+            <ion-item lines="none" class="item-form-general-modal">
+              <ion-input placeholder="Serie" type="number"></ion-input>
+            </ion-item>
+            <ion-item lines="none" class="item-form-general-modal item-heigt-textarea margin-top-8">
+              <ion-textarea placeholder="Comentario"></ion-textarea>
+            </ion-item>
+            <ion-button mode="ios" class="btn-amarrillo-general btn-moda-centrar"  href="/lista-gui-emision">
+               Confirmar
+            </ion-button>
+          </ion-card>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+</ion-content>

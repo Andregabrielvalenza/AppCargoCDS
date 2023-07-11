@@ -1,0 +1,7 @@
+{
+  "name": "AppCargocds",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

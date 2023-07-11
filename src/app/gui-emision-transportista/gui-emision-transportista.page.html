@@ -1,0 +1,152 @@
+<ion-content [fullscreen]="true">
+  <div class="div-header-guias div-header-guias-margin-bottom">
+    <ion-button mode="ios" class="btn-circle-header-blanco ion-no-padding"><ion-icon name="chevron-back-outline"></ion-icon></ion-button>
+    <ion-button mode="ios" class="btn-circle-header-blanco ion-no-padding"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></ion-button>
+    <div class="div-popover div-popover-guia">
+      <ion-item class="item-popover" [button]="true" [detail]="false" lines="none" (click)="setOpen(true)">
+        <ion-img src="assets/img/icon-caja-azul.svg"></ion-img>
+        <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+          Editar guia de remisión
+        </ion-label>
+      </ion-item>
+      <ion-item class="item-popover item-border-bottom-cero" [button]="true" [detail]="false" lines="none" (click)="anularOpen(true)">
+        <ion-icon name="close"></ion-icon>
+        <ion-label class="margin-cero color-azul-size-18 ion-text-center font-medium">
+          Anular guia de remisión
+        </ion-label>
+      </ion-item>
+    </div>
+  </div>
+  <div class="div-conten-general-padding-left-right div-qr-fondo">
+    <ion-card mode="ios" class="card-qr"></ion-card>
+    <h3 class="ion-text-center color-17-size-20 font-bold margin-bottom-cero margin-top-18">Guia de remision transportista</h3>
+    <p class="ion-text-center color-17-size-20 font-light margin-top-6"> <span class="font-bold">N°</span> 0001- 989876</p>
+  </div>
+  <div class="div-conten-general-padding-left-right margin-top-25">
+    <ion-accordion-group>
+      <ion-accordion value="first" toggleIcon="chevron-down-outline" toggleIconSlot="end" class="acordion-guia margin-bottom-6">
+        <ion-item slot="header" lines="none" class="item-acordeon item-azul-guia">
+          <ion-label class="color-ff-size-18  font-bold">
+            Datos de la empresa transportista
+          </ion-label>
+        </ion-item>
+        <div class="div-conten-padding-left-right" slot="content">
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">N° de registro MTC: <span class="font-regular color-17-size-13 margin-left-6">1533865CNG</span></p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">N° de autorización: <span class="font-regular color-17-size-13 margin-left-6">(PRODUCE) 99384-99384-23</span></p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">Domicilio físcal</p>
+            <p class="margin-bottom-cero margin-top-8 font-regular color-17-size-13">AV. LAS BEGONIAS 315 VENTANILLA, LIMA - LIMA - VENTANILLA</p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">Página Web: <span class="font-regular color-17-size-13 margin-left-6">https://aduandina.com.pe</span></p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">Teléfono(s) / Fax: <span class="font-regular color-17-size-13 margin-left-6">(511) 443 9983</span></p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">E-mail: <span class="font-regular color-17-size-13 margin-left-6">atencion.cliente@aduandina.com.pe</span></p>
+          </div>
+        </div>
+      </ion-accordion>
+      <ion-accordion value="second" toggleIcon="chevron-down-outline" toggleIconSlot="end" class="acordion-guia margin-bottom-6">
+        <ion-item slot="header" lines="none" class="item-acordeon item-azul-guia">
+          <ion-label class="color-ff-size-18  font-bold">
+            Datos de la empresa transportista
+          </ion-label>
+        </ion-item>
+        <div class="div-conten-padding-left-right" slot="content">
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">N° de registro MTC: <span class="font-regular color-17-size-13 margin-left-6">1533865CNG</span></p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">N° de autorización: <span class="font-regular color-17-size-13 margin-left-6">(PRODUCE) 99384-99384-23</span></p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">Domicilio físcal</p>
+            <p class="margin-bottom-cero margin-top-8 font-regular color-17-size-13">AV. LAS BEGONIAS 315 VENTANILLA, LIMA - LIMA - VENTANILLA</p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">Página Web: <span class="font-regular color-17-size-13 margin-left-6">https://aduandina.com.pe</span></p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">Teléfono(s) / Fax: <span class="font-regular color-17-size-13 margin-left-6">(511) 443 9983</span></p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">E-mail: <span class="font-regular color-17-size-13 margin-left-6">atencion.cliente@aduandina.com.pe</span></p>
+          </div>
+        </div>
+      </ion-accordion>
+      <ion-accordion value="third" toggleIcon="chevron-down-outline" toggleIconSlot="end" class="acordion-guia margin-bottom-6">
+        <ion-item slot="header" lines="none" class="item-acordeon item-azul-guia">
+          <ion-label class="color-ff-size-18  font-bold">
+            Datos de la empresa transportista
+          </ion-label>
+        </ion-item>
+        <div class="div-conten-padding-left-right" slot="content">
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">N° de registro MTC: <span class="font-regular color-17-size-13 margin-left-6">1533865CNG</span></p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">N° de autorización: <span class="font-regular color-17-size-13 margin-left-6">(PRODUCE) 99384-99384-23</span></p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">Domicilio físcal</p>
+            <p class="margin-bottom-cero margin-top-8 font-regular color-17-size-13">AV. LAS BEGONIAS 315 VENTANILLA, LIMA - LIMA - VENTANILLA</p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">Página Web: <span class="font-regular color-17-size-13 margin-left-6">https://aduandina.com.pe</span></p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">Teléfono(s) / Fax: <span class="font-regular color-17-size-13 margin-left-6">(511) 443 9983</span></p>
+          </div>
+          <div class="margin-bottom-14">
+            <p class="color-17-size-14 font-bold margin-bottom-cero">E-mail: <span class="font-regular color-17-size-13 margin-left-6">atencion.cliente@aduandina.com.pe</span></p>
+          </div>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </div>
+
+  <ion-modal [isOpen]="isModalOpen" class="modal-transparente">
+    <ng-template>
+      <ion-content class="ion-padding conten-modal">
+        <div class="modal-padding-left-right div-modal">
+          <ion-card class="ion-no-margin card-modal-centro">
+            <ion-button mode="ios" class="btn-close-modal ion-no-padding" (click)="setOpen(false)"><ion-icon name="close"></ion-icon></ion-button>
+            <h1 class="ion-text-center color-17-size-24 font-bold">Edición de guia de remisión</h1>
+            <p class="ion-text-center font-regular color-17-size-16 margin-top-45">
+              Para poder editar guía de remisíon, el sistema lo anulará y volverá a genera nueva guía despues que guarde sus cambios.<br><br> ¿Está seguro que desea proeceder?
+            </p>
+            <ion-button mode="ios" class="btn-amarrillo-general btn-moda-centrar btn-margin-top-modal"  href="/lista-recojos">
+              Proceder
+            </ion-button>
+          </ion-card>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal [isOpen]="isModalanular" class="modal-transparente">
+    <ng-template>
+      <ion-content class="ion-padding conten-modal">
+        <div class="modal-padding-left-right div-modal">
+          <ion-card class="ion-no-margin card-modal-centro">
+            <ion-button mode="ios" class="btn-close-modal ion-no-padding" (click)="anularOpen(false)"><ion-icon name="close"></ion-icon></ion-button>
+            <h1 class="ion-text-center color-17-size-24 font-bold">Eliminar guia de remisión</h1>
+            <p class="ion-text-center font-regular color-17-size-16 margin-top-45">
+              La guia de remisión será borrada permanentemente y no se va a poder acceder en el futuro.<br><br> ¿Está seguro que desea proeceder?
+            </p>
+            <ion-button mode="ios" class="btn-amarrillo-general btn-moda-centrar btn-margin-top-modal"  href="/home">
+               Confirmar
+            </ion-button>
+          </ion-card>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+</ion-content>
